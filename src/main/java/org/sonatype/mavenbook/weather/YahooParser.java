@@ -7,6 +7,7 @@ import org.dom4j.Document;
 import org.dom4j.DocumentFactory;
 import org.dom4j.io.SAXReader;
 public class YahooParser {
+
   private static Logger log = Logger.getLogger(YahooParser.class);
   public Weather parse(InputStream inputStream) throws Exception {
     Weather weather = new Weather();

@@ -7,7 +7,7 @@ public class YahooRetriever {
   private static Logger log = Logger.getLogger(YahooRetriever.class);
   public InputStream retrieve(int zipcode) throws Exception {
     log.info( "Retrieving Weather Data" );
-    String url = "http://weather.yahooapis.com/forecastrss?p=" + zipcode;
+    String url = "http://weather.yahooapis.com/forecastrss?w=" + zipcode;
     URLConnection conn = new URL(url).openConnection();
     return conn.getInputStream();
   }
